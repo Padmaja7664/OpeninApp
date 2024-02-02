@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:elevation="5dp"
+app:cardCornerRadius="20dp"
+android:layout_margin="9dp"
+android:id="@+id/cardview">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_launcher_background"
+        android:id="@+id/productimg"
+        android:layout_margin="10dp"
+        app:shapeAppearanceOverlay="@style/SoftCorner">
+
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleId"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clicksId"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="No of click"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp">
+
+    </TextView>
+
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="80dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/dateId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:text="date" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bootomLinkId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="10dp"
+        android:text="Bootomlink" />
+
+
+</androidx.cardview.widget.CardView>
